@@ -1,0 +1,8 @@
+{% if request.user.is_authenticated or request.user.is_staff %}
+<h1>heyyyyyy</h1>
+<a href="{% url 'login' %}">login</a>
+<a href="{% url 'logout' %}">logout</a>
+{% endif %}
+<h1>heyyyyyy</h1>
+<a href="{% url 'login' %}">login</a>
+<a href="{% url 'logout' %}">logout</a>
